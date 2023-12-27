@@ -1,1 +1,1 @@
-Live Link https://dicegametwopplayer.netlify.app/
+Dice game using HTML, CSS, and JavaScript.
