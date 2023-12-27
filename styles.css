@@ -1,0 +1,57 @@
+.container {
+  width:100%;
+  hight:10%;
+  margin-top:-1.2%;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+  font-style:verdana;
+  font-size:30px;
+
+
+}
+
+body {
+  background-color: #4c4040;
+}
+
+h1 {
+  margin:1px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 10px 0 #4ed329;
+  font-size: 8rem;
+  color: #0f845d;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-style: verdana;
+}
+
+img {
+  width:70%;
+}
+
+footer{
+  margin-top: 5%;
+  padding: 10px;
+  color:rgb(168, 62, 62);
+  text-align: center;
+  text-shadow:3px 0 rgb(8, 5, 5);
+  font-family:cursive;
+
+}
+footer:hover{
+  margin-top: 5%;
+  padding: 10px;
+  font-size: 22px;
+  color:rgb(255, 0, 0);
+  text-align: center;
+  text-shadow:3px 0 rgb(8, 5, 5);
+  font-family:cursive;
+}
+
