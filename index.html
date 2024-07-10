@@ -3,40 +3,94 @@
 
 <head>
   <meta charset="utf-8">
-  <title> 🎲 Dice Game</title>
+  <title>🎲 Dicey Adventures Deluxe 🎲</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|Poppins:400,700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <audio id="rollSound" src="path/to/roll-sound.mp3"></audio>
+  <audio id="winSound" src="path/to/win-sound.mp3"></audio>
+  <audio id="bgMusic" src="path/to/background-music.mp3" loop></audio>
 </head>
 
-<body>
-
-  <div class="container">
-    <h1>Refresh Me</h1>
-
-    <div class="dice">
-      <p>Player 1 </p>
-      <img class="img1" src="images/dice6.png">
-    </div>
-
-    <div class="dice">
-      <p>Player 2</p>
-      <img class="img2" src="images/dice6.png">
-    </div>
-
+<body class="light-mode">
+  <div class="mode-toggle">
+    <label class="switch">
+      <input type="checkbox" id="modeToggle">
+      <span class="slider round"></span>
+    </label>
+    <span id="modeText">Dark Mode</span>
   </div>
-  <div class="button">
-    <button id="refreshButton">Play Again</button>
+
+  <div id="playerSetup" class="container">
+    <h1 class="game-title">🎲 Dicey Adventures Deluxe 🎲</h1>
+    <h2>Enter Player Names</h2>
+    <div class="input-group">
+      <input type="text" id="player1Name" placeholder="Player 1 Name">
+      <input type="text" id="player2Name" placeholder="Player 2 Name">
     </div>
+    <div class="game-mode">
+      <label for="bestOf">Best of:</label>
+      <select id="bestOf">
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <button id="startGame" class="btn pulse">Start Adventure</button>
+  </div>
+
+  <div id="gameContainer" class="container" style="display: none;">
+    <h1 id="gameStatus">Let's Roll!</h1>
+
+    <div class="dice-container">
+      <div class="dice">
+        <p id="player1Display">Player 1</p>
+        <img class="img1" src="images/dice6.png" alt="img1">
+        <div class="player-score">Score: <span id="score1">0</span></div>
+      </div>
+
+      <div id="vs">VS</div>
+
+      <div class="dice">
+        <p id="player2Display">Player 2</p>
+        <img class="img2" src="images/dice6.png" alt="img2">
+        <div class="player-score">Score: <span id="score2">0</span></div>
+      </div>
+    </div>
+
+    <div id="winnerAnnouncement" class="winner-announcement"></div>
+
+    <div class="button-group">
+      <button id="rollButton" class="btn pulse">Roll Dice</button>
+      <button id="newGameButton" class="btn btn-secondary">New Game</button>
+    </div>
+
+    <div id="fireworks" class="pyro" style="display: none;">
+      <div class="before"></div>
+      <div class="after"></div>
+    </div>
+  </div>
+
+  <div id="leaderboard" class="container" style="display: none;">
+    <h2>Leaderboard</h2>
+    <table id="leaderboardTable">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Player</th>
+          <th>Wins</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <!-- <h2>Made with ❤️ by Avanish Kumar Gupta</h2> -->
+  </footer>
+
   <script src="index.js" charset="utf-8"></script>
-  
-
-
-
 </body>
-
-<footer>
-  <h2>Made by 🎲 Avanish Kumar Gupta 🎲</h2>
-</footer>
 
 </html>
