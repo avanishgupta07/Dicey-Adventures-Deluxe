@@ -139,5 +139,4 @@ document.getElementById('modeToggle').addEventListener('change', function() {
     document.getElementById('modeText').textContent = this.checked ? 'Light Mode' : 'Dark Mode';
 });
 
-// Initialize the game
 resetGame();
