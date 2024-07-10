@@ -16,6 +16,6 @@ Dicey Adventures Deluxe is a web-based dice game where players roll virtual dice
 ## How to Use
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/avanishgupta07/dicey-adventures-deluxe.git
+   git clone https://github.com/avanishgupta07/Dicey-Adventures-Deluxe.git
 
 Live Demo Link  https://avanishgupta07.github.io/DICE_GAME/
