@@ -18,4 +18,4 @@ Dicey Adventures Deluxe is a web-based dice game where players roll virtual dice
    ```bash
    git clone https://github.com/avanishgupta07/Dicey-Adventures-Deluxe.git
 
-Live Demo Link  https://avanishgupta07.github.io/DICE_GAME/
+Live Demo Link  https://avanishgupta07.github.io/Dicey-Adventures-Deluxe/
